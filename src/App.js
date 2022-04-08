@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './Pages/Home'
+import Page from './Pages/Page'
+import NavMini from './Components/Navigation'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [mode, setMode] = useState('white')
+    return (
+        <BrowserRouter>
+            <link
+                href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+                rel="stylesheet"
+            />
+
+            <div className={`mode_${mode}`}>
+                <NavMini mode={mode} setMode={setMode} />
+                <div className="App">
+                    {/* <h1>Navbar...</h1> */}
+                    <Routes>
+                        <Route path="/page" element={<Page />}></Route>
+                        <Route path="/" element={<Home />}></Route>
+                    </Routes>
+                </div>
+            </div>
+        </BrowserRouter>
+    )
 }
 
-export default App;
+export default App

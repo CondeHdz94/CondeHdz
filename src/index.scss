@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+}
+
+.mode_white {
+    /*WHITE - BLACK*/
+    --var-black: #141414;
+    --var-white: #f4f4f4;
+    --var-light-black: #2b2b2b;
+    --var-primary-gray: #bababa;
+    --var-secondary-gray: #a5a5a5;
+    --var-secondary-dark-gray: #7f7f7f;
+    --var-secondary-light-gray: #d8d8d8;
+    --var-shadow-nav: rgba(20, 20, 20, 0.25);
+}
+
+.mode_dark {
+    /*BLACK - WHITE*/
+    --var-black: #f4f4f4;
+    --var-white: #141414;
+    --var-light-black: #2b2b2b;
+    --var-primary-gray: #bababa;
+    --var-secondary-gray: #a5a5a5;
+    --var-secondary-dark-gray: #7f7f7f;
+    --var-secondary-light-gray: #d8d8d8;
+    --var-shadow-nav: rgba(255, 255, 255, 0.25);
+}
+
+* {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--var-white);
+}
+
+.logoColor {
+    fill: var(--var-black);
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2.125rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+p {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+small {
+    font-weight: 300;
+    font-size: 0.688rem;
+}
+
+.button-att {
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+h1,
+h2,
+h3,
+p,
+button {
+    margin: 8px 0px;
+}
+
+small {
+    margin: 0px;
+}
+
+button {
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--var-black);
+    color: var(--var-white);
+    min-width: 128px;
+    text-align-last: center;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(85%);
+        //background-color: darken(var(--var-black), 15%);
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+// colors class
+.color--black {
+    color: var(--var-black);
+}
+
+.color--white {
+    color: var(--var-white);
+}
+
+.color--light-black {
+    color: var(--var-light-black);
+}
+
+.color--secondary-dark-gray {
+    color: var(--var-secondary-dark-gray);
+}
+
+.color--secondary-light-gray {
+    color: var(--var-secondary-light-gray);
+}
+
+.color--primary-gray {
+    color: var(--var-primary-gray);
+}
+
+.color--secondary-gray {
+    color: var(--var-secondary-gray);
+}
+
+.container {
+    margin: 0px 42px;
+}
+
+.title {
+    margin-top: 10rem;
+}
+
+.align-self--center {
+    align-self: center;
+}
+
+.bg-none {
+    background-color: transparent;
+}
+
+.d-flex {
+    display: flex;
+}

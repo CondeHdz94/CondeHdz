@@ -1,0 +1,14 @@
+.collapsed__subItems {
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    .button,
+    small {
+        color: var(--var-black);
+    }
+}
+
+.show {
+    height: max-content;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,13 @@
+.container__logo {
+    display: flex;
+    justify-content: center;
+
+    .logo {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+}
+
+.container__button {
+    text-align-last: right;
+}
