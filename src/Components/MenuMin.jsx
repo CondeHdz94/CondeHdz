@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import '../Stylesheets/Components/MenuMin.scss'
 import { menuItems } from '../Data/jsonBase'
+import { Link } from 'react-scroll'
 
-function MenuMin({ showMenu }) {
+function MenuMin({ showMenu, setShowMenu }) {
     const [isSelected, setIsSelected] = useState(null)
 
     const toggleMenu = (i) => {
@@ -11,28 +12,41 @@ function MenuMin({ showMenu }) {
         }
         setIsSelected(i)
     }
+
     return (
-        showMenu && (
-            <div className="menu__container">
+        <>
+            <div className={`bg__menuMin ${showMenu && 'showMenuBg'}`}></div>
+            <div
+                className={`menu__container ${showMenu && 'showMenu'} `}
+                // style={{ bottom: `${showMenu ? 'showMenu' : '0px'}` }}
+            >
                 <ul>
                     {menuItems.map((item, index) => (
-                        <li
-                            key={index}
-                            className={`menu__list ${
-                                isSelected === index && 'selected'
-                            }
-                                `}
-                            onClick={() => toggleMenu(index)}
-                        >
-                            <span className="material-icons-outlined">
-                                {item.icon}
-                            </span>
-                            <div className="button-att">{item.name}</div>
+                        <li className={` menu__list `} key={index}>
+                            {' '}
+                            <Link
+                                to={item.menuId}
+                                spy={true}
+                                smooth={true}
+                                offset={50}
+                                duration={500}
+                                activeClass=" selected"
+                                onClick={() => {
+                                    toggleMenu(index)
+                                    //window.location.replace(`#${item.menuId}`)
+                                    setShowMenu(false)
+                                }}
+                            >
+                                <span className="material-icons-outlined">
+                                    {item.icon}
+                                </span>
+                                <div className="button-att">{item.name}</div>
+                            </Link>
                         </li>
                     ))}
                 </ul>
             </div>
-        )
+        </>
     )
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../Stylesheets/Components/Navigation.scss'
-import logo from '../Img/Home/Logo--Icon_Black.svg'
-import ImageLogoSVG from './ImageLogoSVG'
+// import logo from '../Img/Home/Logo--Icon_Black.svg'
+import ImageLogoSVG from './SVG/ImageLogoSVG'
 import MenuMin from './MenuMin'
 
 function Navigation({ mode, setMode }) {
@@ -17,7 +17,7 @@ function Navigation({ mode, setMode }) {
 
     return (
         <>
-            <MenuMin showMenu={showMenu} />
+            <MenuMin showMenu={showMenu} setShowMenu={setShowMenu} />
             <div className="nav__container ">
                 <nav>
                     <ImageLogoSVG classLogo={'nav__logo'} />
@@ -28,13 +28,17 @@ function Navigation({ mode, setMode }) {
                             className="material-icons-outlined m-l color--black"
                             onClick={handleClickMode}
                         >
-                            dark_mode
+                            {mode === 'white'
+                                ? 'dark_mode'
+                                : mode === 'dark'
+                                ? 'light_mode'
+                                : ''}
                         </span>
                         <span
-                            className="material-icons-outlined m-l color--black"
+                            className="material-icons-outlined m-l color--black invert-h"
                             onClick={() => setShowMenu(!showMenu)}
                         >
-                            widgets
+                            sort
                         </span>
                     </div>
                 </nav>

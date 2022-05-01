@@ -1,0 +1,98 @@
+.container_full__social {
+    position: relative;
+    .bg__mountain {
+        position: absolute;
+        background-image: url(../../../../Img/Home/Bg/Mountains.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-color: transparent;
+        width: 100%;
+        height: 75px;
+        bottom: 0;
+    }
+    .bg__moon {
+        position: absolute;
+        background-color: var(--white);
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        top: 30px;
+        right: 24px;
+        //border-radius: 0px 10px 0px 30px;
+        box-shadow: 0px 0px 10px var(--white);
+    }
+    .container__social {
+        .container__info {
+            h2 {
+                margin-top: 3rem;
+            }
+
+            .icon__att {
+                height: 32px;
+                width: 100%;
+                background-color: var(--white);
+            }
+            .icon_github {
+                //background-image: url(../../../../Img/Home/icon_github.svg);
+                //background-size: 32px;
+                //background-repeat: no-repeat;
+                // height: 32px;
+                // width: 100%;
+                // background-color: var(--white);
+                -webkit-mask: url(../../../../Img/Home/icon_github.svg)
+                    no-repeat;
+                mask: url(../../../../Img/Home/icon_github.svg) no-repeat;
+                mask-size: 32px;
+            }
+            .icon_behance {
+                -webkit-mask: url(../../../../Img/Home/icon_behance.svg)
+                    no-repeat;
+                mask: url(../../../../Img/Home/icon_behance.svg) no-repeat;
+                mask-size: 32px;
+            }
+
+            .icon_linkedin {
+                -webkit-mask: url(../../../../Img/Home/icon_linkedin.svg)
+                    no-repeat;
+                mask: url(../../../../Img/Home/icon_linkedin.svg) no-repeat;
+                mask-size: 32px;
+            }
+
+            .icon_instagram {
+                -webkit-mask: url(../../../../Img/Home/icon_instagram.svg)
+                    no-repeat;
+                mask: url(../../../../Img/Home/icon_instagram.svg) no-repeat;
+                mask-size: 32px;
+            }
+
+            .icon_twitter {
+                -webkit-mask: url(../../../../Img/Home/icon_twitter.svg)
+                    no-repeat;
+                mask: url(../../../../Img/Home/icon_twitter.svg) no-repeat;
+                mask-size: 32px;
+            }
+
+            .container__glass {
+                background: rgba(155, 155, 155, 0.05);
+                box-shadow: 0 8px 32px 0 var(--var-shadow-nav);
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(16px) saturate(180%);
+                border-radius: 10px;
+                border: 1px solid rgba(155, 155, 155, 0.18);
+                padding: 1rem;
+                width: 80%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                align-self: end;
+                margin: 2rem 0rem;
+                grid-gap: 1rem;
+                li {
+                    margin: 0px;
+                    box-sizing: border-box;
+                    -webkit-mask-position: center;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

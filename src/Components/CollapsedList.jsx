@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import PercentList from './PercentList'
 import '../Stylesheets/Components/CollapsedList.scss'
 
@@ -12,6 +12,7 @@ function CollapsedList({
     isSelected,
     setIsSelected,
 }) {
+    const [heightLi, setHeightLi] = useState(0)
     const parentRef = useRef()
     const toggle = (i) => {
         if (isSelected === i) {
@@ -19,6 +20,7 @@ function CollapsedList({
         }
         setIsSelected(i)
     }
+
     return (
         <li className="m-b-li">
             <div
@@ -51,7 +53,12 @@ function CollapsedList({
                 ref={parentRef}
                 style={
                     isSelected === indexIn
-                        ? { height: parentRef.current.scrollHeight + 'px' }
+                        ? {
+                              height:
+                                  (heightLi + 16) *
+                                      Object.keys(subItems).length +
+                                  'px',
+                          }
                         : { height: '0px' }
                 }
             >
@@ -60,7 +67,7 @@ function CollapsedList({
                         key={index}
                         title={item.title}
                         percent={item.percent}
-                        stateSelect={isSelected}
+                        setHeightLi={setHeightLi}
                     />
                 ))}
             </ul>

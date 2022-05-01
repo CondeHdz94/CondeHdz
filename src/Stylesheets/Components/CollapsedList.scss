@@ -1,7 +1,7 @@
 .collapsed__subItems {
     height: 0px;
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
+    transition: height 0.3s linear;
     .button,
     small {
         color: var(--var-black);

@@ -1,0 +1,18 @@
+.container__contactMe {
+    margin-bottom: 60px;
+
+    .container__card__contactMe {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        span {
+            font-size: 2rem;
+        }
+        .contactMe__info {
+            margin-left: 1rem;
+            p {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

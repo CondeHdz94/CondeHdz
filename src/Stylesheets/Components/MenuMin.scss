@@ -1,29 +1,49 @@
+.bg__menuMin {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: rgba(155, 155, 155, 0.05);
+    box-shadow: 0 8px 32px 0 var(--var-shadow-nav);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    visibility: hidden;
+    background-color: rgba(155, 155, 155, 0);
+    transition: all 0.5s ease-in-out;
+}
 .menu__container {
     position: fixed;
-    bottom: 50px;
+    bottom: -450px;
     width: 100%;
-    background-color: red;
-    padding: 1rem 0rem;
+    background-color: var(--var-white);
+    padding: 3rem 0rem;
+    z-index: 2;
+    border-radius: 16px 16px 0px 0px;
+    transition: bottom 0.5s ease-in-out;
+
     .menu__list {
-        display: flex;
-        padding: 1rem 3rem;
-        align-items: center;
-        align-content: center;
-        background-color: var(--var-white);
+        //background-color: var(--var-light-black);
         color: var(--var-black);
 
-        &:hover::before {
-            content: '•';
-            position: absolute;
-            left: 1.5rem;
-            font-size: 1.3rem;
-        }
+        a {
+            display: flex;
+            padding: 1rem 3rem;
+            align-items: center;
+            align-content: center;
 
-        &:hover,
-        &:hover span,
-        &:hover div {
-            background-color: var(--var-black);
-            color: var(--var-white);
+            &:hover::before {
+                content: '•';
+                position: absolute;
+                left: 1.5rem;
+                font-size: 1.3rem;
+            }
+            &:hover,
+            &:hover span,
+            &:hover div {
+                background-color: var(--var-black);
+                color: var(--var-white);
+            }
         }
 
         .button-att {
@@ -32,7 +52,6 @@
     }
 
     .selected {
-        
         background-color: var(--var-black);
         color: var(--var-white);
 
@@ -42,12 +61,22 @@
             left: 1.5rem;
             font-size: 1.3rem;
         }
-        
+
         span,
         div {
             background-color: var(--var-black);
             color: var(--var-white);
         }
     }
+}
+.showMenu {
+    bottom: 46px;
+    transition: bottom 0.5s ease-in-out, background-color 0.3s;
+}
 
+.showMenuBg {
+    visibility: visible;
+    backdrop-filter: blur(4px);
+    background-color: rgba(155, 155, 155, 0.5);
+    transition: all 0.5s ease-in-out;
 }

@@ -1,34 +1,42 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
-function PercentList({ title, percent, stateSelect }) {
+function PercentList({ title, percent, setHeightLi }) {
     const [percentCount, setPercentCount] = useState(0)
-    const [oldStateId, setOldStateId] = useState(null)
+    const [percentCountNum, setPercentCountNum] = useState(0)
 
-    // useEffect(() => {
-    //     setInterval(() => setPercentCount(Math.floor(percent) + 1), 2000)
-    // }, [percent])
+    const parentRef = useRef()
+    useEffect(() => {
+        setHeightLi(parentRef.current.scrollHeight)
+    }, [parentRef])
 
-    // useEffect(() => {
-    //     setOldStateId(stateSelect)
-    // }, [stateSelect])
+    useEffect(() => {
+        setInterval(() => setPercentCount(Math.floor(percent) + 1), 300)
+    }, [percent])
 
-    // useEffect(() => {
-    //     console.log(stateSelect, oldStateId)
-    //     oldStateId !== stateSelect && setPercentCount(0)
-    // }, [oldStateId, stateSelect, setPercentCount])
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setPercentCountNum((counter) =>
+                counter <= percent ? counter + 1 : counter
+            )
+        }, 15)
+
+        return () => {
+            clearInterval(interval)
+        }
+    }, [])
 
     return (
-        <li>
+        <li ref={parentRef}>
             <div className="collapsed__card--text">
                 <div className="button-att color--black">{title}</div>
-                <small>{`${percent}%`}</small>
+                <small>{`${percentCountNum}%`}</small>
             </div>
             <div className="skills__bar">
                 <span
                     className="skills__percentage skills__html"
                     style={{
                         transition: 'width 1s ease-in-out',
-                        width: `${percent}%`,
+                        width: `${percentCount}%`,
                     }}
                 ></span>
             </div>

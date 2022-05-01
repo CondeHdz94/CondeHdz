@@ -1,6 +1,6 @@
 .nav__container {
     position: fixed;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
     z-index: 2;
     box-shadow: 0px -2px 8px var(--var-shadow-nav);

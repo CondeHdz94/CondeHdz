@@ -8,11 +8,6 @@ function App() {
     const [mode, setMode] = useState('white')
     return (
         <BrowserRouter>
-            <link
-                href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-                rel="stylesheet"
-            />
-
             <div className={`mode_${mode}`}>
                 <NavMini mode={mode} setMode={setMode} />
                 <div className="App">

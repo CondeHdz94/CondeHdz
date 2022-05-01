@@ -26,6 +26,14 @@ export const dataSkills = [
                 title: 'React',
                 percent: '85',
             },
+            {
+                title: 'UX',
+                percent: '78',
+            },
+            {
+                title: 'UI',
+                percent: '70',
+            },
         ],
     },
     {
@@ -103,9 +111,91 @@ export const dataSkills = [
 ]
 
 export const menuItems = [
-    { icon: 'home', name: 'Home' },
-    { icon: 'lightbulb', name: 'About Me' },
-    { icon: 'bubble_chart', name: 'Skills' },
-    { icon: 'rocket', name: 'Services' },
-    { icon: 'question_answer', name: 'Contact Me' },
+    { icon: 'home', name: 'Home', menuId: 'Home' },
+    { icon: 'lightbulb', name: 'About Me', menuId: 'About' },
+    { icon: 'bubble_chart', name: 'Skills', menuId: 'Skills' },
+    { icon: 'rocket', name: 'Services', menuId: 'Services' },
+    { icon: 'question_answer', name: 'Contact Me', menuId: 'Contact' },
+]
+
+export const qualificationEducation = [
+    {
+        year: '2010',
+        title: 'High School',
+        info: 'Corporación Educativa Adventista C.E.A.',
+    },
+    {
+        year: '2016',
+        title: 'Multimedia Enginner',
+        info: 'San Buenaventura - University',
+    },
+]
+
+export const qualificationWork = [
+    {
+        title: 'Sistel',
+        info: 'Empresa de base tecnológica que ofrece soluciones y herramientas para formación y desarrollo del talento corporativo.',
+    },
+    {
+        title: 'Taylor & Johnson',
+        info: 'Empresa dedicada al desarrollo e implementación de Software Bancario.',
+    },
+    {
+        title: 'UNI2',
+        info: 'Entidad de microcrédito enfocada en financiar y abrir oportunidades de crédito formal.',
+    },
+]
+
+export const services = [
+    {
+        icon: 'space_dashboard',
+        title: 'UI and UX Design',
+    },
+    {
+        icon: 'code',
+        title: 'Frontend Development',
+    },
+    {
+        icon: 'draw',
+        title: 'Creation and Design',
+    },
+    {
+        icon: 'play_circle',
+        title: 'Animation and Video',
+    },
+    {
+        icon: 'animation',
+        title: 'Interactive Courses',
+    },
+]
+
+export const contactMe = [
+    {
+        icon: 'smartphone',
+        title: 'Call me',
+        text: '312 721 6626',
+    },
+    {
+        icon: 'mail',
+        title: 'Email',
+        text: 'condeher94@gmail.com',
+    },
+]
+
+export const social = [
+    {
+        icon: 'github',
+    },
+    {
+        icon: 'behance',
+    },
+    {
+        icon: 'linkedin',
+    },
+    {
+        icon: 'instagram',
+    },
+    {
+        icon: 'twitter',
+    },
 ]
