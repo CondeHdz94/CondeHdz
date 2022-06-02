@@ -114,6 +114,7 @@ export const menuItems = [
     { icon: 'home', name: 'Home', menuId: 'Home' },
     { icon: 'lightbulb', name: 'About Me', menuId: 'About' },
     { icon: 'bubble_chart', name: 'Skills', menuId: 'Skills' },
+    { icon: 'spa', name: 'Qualifications', menuId: 'Qualifications' },
     { icon: 'rocket', name: 'Services', menuId: 'Services' },
     { icon: 'question_answer', name: 'Contact Me', menuId: 'Contact' },
 ]
@@ -150,22 +151,54 @@ export const services = [
     {
         icon: 'space_dashboard',
         title: 'UI and UX Design',
+        info: [
+            { value: 0, label: 'Design the user interface' },
+            { value: 1, label: 'Study the best Ui and UX' },
+            { value: 2, label: 'Great study of target audience' },
+        ],
     },
     {
         icon: 'code',
         title: 'Frontend Development',
+        info: [
+            { value: 0, label: 'Develop the user interface' },
+            { value: 1, label: 'Web page develpment' },
+            { value: 2, label: 'Great study of styles and colors' },
+            { value: 3, label: 'Create a UX element interactions' },
+        ],
     },
     {
         icon: 'draw',
         title: 'Creation and Design',
+        info: [
+            { value: 0, label: 'Character creation and development' },
+            { value: 1, label: 'Logo study and creation' },
+            { value: 2, label: 'Vectorization' },
+            { value: 3, label: 'Photograpic edition' },
+            { value: 4, label: 'Scenaries design' },
+        ],
     },
     {
         icon: 'play_circle',
         title: 'Animation and Video',
+        info: [
+            { value: 0, label: 'Design study' },
+            { value: 1, label: 'Storyboard creation and development' },
+            { value: 2, label: 'Create animations' },
+            { value: 3, label: 'Post-production' },
+            { value: 4, label: 'Create and adjust videos' },
+            { value: 5, label: 'Audio adjust and sfx addition' },
+        ],
     },
     {
         icon: 'animation',
         title: 'Interactive Courses',
+        info: [
+            { value: 0, label: 'Storyboard creation and development' },
+            { value: 1, label: 'Customizations Themes' },
+            { value: 2, label: 'Interactive animations' },
+            { value: 3, label: 'Post-production' },
+        ],
     },
 ]
 
@@ -185,17 +218,22 @@ export const contactMe = [
 export const social = [
     {
         icon: 'github',
+        page: 'https://github.com/CondeHdz94',
     },
     {
         icon: 'behance',
+        page: 'https://www.behance.net/camiloconde',
     },
     {
         icon: 'linkedin',
+        page: 'https://www.linkedin.com/in/camilo-conde-652204220/',
     },
     {
         icon: 'instagram',
+        page: 'https://www.google.com/',
     },
     {
         icon: 'twitter',
+        page: 'https://twitter.com/cndhdz',
     },
 ]

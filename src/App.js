@@ -5,7 +5,10 @@ import Page from './Pages/Page'
 import NavMini from './Components/Navigation'
 
 function App() {
-    const [mode, setMode] = useState('white')
+    var modecolor = localStorage.getItem('colorMode')
+        ? localStorage.getItem('colorMode')
+        : 'white'
+    const [mode, setMode] = useState(modecolor)
     return (
         <BrowserRouter>
             <div className={`mode_${mode}`}>

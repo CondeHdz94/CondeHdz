@@ -16,6 +16,7 @@
     --var-secondary-light-gray: #d8d8d8;
     --var-shadow-nav: rgba(20, 20, 20, 0.25);
     --var--error: #ff3333;
+    --var--confirm: #2b9238;
 }
 
 .mode_dark {
@@ -31,6 +32,7 @@
     --var-secondary-light-gray: #7f7f7f;
     --var-shadow-nav: rgba(255, 255, 255, 0.25);
     --var--error: #ff7272;
+    --var--confirm: #53e978;
 }
 
 * {
@@ -47,9 +49,6 @@
 
 body {
     transition: all 0.3s ease-in-out;
-}
-
-.container {
 }
 
 .logoColor {
@@ -264,6 +263,37 @@ form {
     }
 }
 
+.container__button {
+    button {
+        position: relative;
+        min-height: 53px;
+    }
+    .button--loading::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: 4px solid transparent;
+        border-top-color: #ffffff;
+        border-radius: 50%;
+        animation: button-loading-spinner 1s ease infinite;
+    }
+    .button--confirm {
+        background-color: var(--var--confirm);
+    }
+
+    .button--error {
+        -webkit-animation: vibrate ease-in 0.5s forwards;
+        animation: vibrate ease-in 0.5s forwards;
+        background-color: var(--var--error);
+    }
+}
+
 ::-webkit-scrollbar {
     background-color: #a5a5a5;
     border-radius: 0.5rem;
@@ -272,4 +302,220 @@ form {
 ::-webkit-scrollbar-thumb {
     background-color: #7f7f7f;
     border-radius: 0.5rem;
+}
+
+.modal {
+    opacity: 1;
+    .modal__container {
+        position: relative;
+        padding: 2rem;
+        border-radius: 8px;
+        color: var(--var-black);
+        max-width: 70%;
+        box-shadow: 0 8px 32px 0 var(--var-shadow-nav);
+        animation-name: popScaleOpen;
+        animation-duration: 0.3s;
+
+        transition: all 0.3s;
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        .modal__close {
+            color: var(--var-primary-gray);
+            top: 8px;
+            right: 8px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        li {
+            margin: 8px 0px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.modal--open {
+    opacity: 1;
+}
+.modal--close {
+    opacity: 0;
+}
+
+@keyframes popScaleOpen {
+    0% {
+        transform: scale(0%);
+    }
+    80% {
+        transform: scale(120%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@keyframes popScaleClose {
+    0% {
+        transform: scale(100%);
+    }
+    20% {
+        transform: scale(120%);
+    }
+    100% {
+        transform: scale(0%);
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 0px 84px;
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .container {
+        margin: 0px auto;
+        max-width: 960px;
+    }
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes vibrate {
+    0%,
+    30%,
+    60%,
+    85%,
+    100% {
+        left: 0;
+    }
+    10%,
+    40%,
+    90%,
+    70% {
+        left: -2px;
+    }
+    20%,
+    50%,
+    80%,
+    95% {
+        left: 2px;
+    }
+}
+
+/* The alert message box */
+.alert {
+    position: fixed;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    display: flex;
+    top: 10px;
+    left: 10px;
+    z-index: 5;
+    width: 97%;
+    box-sizing: border-box;
+
+    span {
+        height: 24px;
+        margin-right: 0.5rem;
+    }
+    small {
+        align-self: center;
+    }
+}
+
+.showAlert {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.5s ease-in-out;
+}
+
+.hideAlert {
+    opacity: 0;
+    transform: translateY(-57px);
+    transition: all 1s ease-in-out;
+}
+
+.error {
+    color: var(--var--error);
+    //background-color: #f8d7da;
+    border-color: var(--var--error);
+}
+
+.success {
+    color: var(--var--confirm);
+    //background-color: #d1e7dd;
+    border-color: var(--var--confirm);
+}
+
+.warning {
+    color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+}
+.primary {
+    color: #084298;
+    background-color: #cfe2ff;
+    border-color: #b6d4fe;
+}
+
+.secondary {
+    color: #41464b;
+    background-color: #e2e3e5;
+    border-color: #d3d6d8;
+}
+
+.info {
+    color: #055160;
+    background-color: #cff4fc;
+    border-color: #b6effb;
+}
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+    /* The alert message box */
+    .alert {
+        top: 10px;
+        left: unset;
+        right: 2px;
+        max-width: 256px;
+    }
+
+    .showAlert {
+        transform: translateX(-12px);
+    }
+
+    .hideAlert {
+        transform: translateX(326px);
+    }
+}
+
+@media (min-width: 1080px) {
+    /* The alert message box */
+    .alert {
+        top: 60px;
+    }
 }

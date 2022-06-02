@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../Stylesheets/Pages/Home/Containers/Social.scss'
 import { social } from '../../Data/jsonBase'
+import { useHistory } from 'react-router-dom'
 
 export default function Social() {
     return (
@@ -15,10 +16,13 @@ export default function Social() {
                     </div>
                     <ul className="bg-none  container__glass">
                         {social.map((item, index) => (
-                            <li
-                                key={index}
-                                className={`icon_${item.icon} icon__att bg-none`}
-                            ></li>
+                            <li key={index} className="bg-none">
+                                <a href={item.page} target="_blank">
+                                    <div
+                                        className={`icon_${item.icon} icon__att bg-none`}
+                                    ></div>
+                                </a>
+                            </li>
                         ))}
                     </ul>
                 </div>

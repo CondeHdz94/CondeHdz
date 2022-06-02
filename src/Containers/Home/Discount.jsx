@@ -14,7 +14,9 @@ export default function Discount() {
                         project!
                     </h3>
                 </div>
-                <div className="Circle"></div>
+                <figure className="bg-none">
+                    <div className="Circle"></div>
+                </figure>
             </div>
         </div>
     )

@@ -41,3 +41,13 @@
     //     margin-right: 2rem;
     // }
 }
+
+@media (min-width: 768px) {
+    .container__qualification {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+        }
+    }
+}

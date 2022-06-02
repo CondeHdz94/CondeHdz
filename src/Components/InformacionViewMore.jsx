@@ -1,8 +1,21 @@
 import React from 'react'
 
-function InformacionViewMore({ icon, title }) {
+function InformacionViewMore({
+    icon,
+    title,
+    setModalShow,
+    info,
+    setInfoModalList,
+    setModalTitle,
+}) {
+    const handleClick = () => {
+        setModalShow(true)
+        setInfoModalList(info)
+        setModalTitle(title)
+    }
+
     return (
-        <li className="container__neumorphism">
+        <li className="container__neumorphism" onClick={handleClick}>
             <div className="container__service__tag bg-none">
                 <span className="material-icons-outlined icon color--black bg-none">
                     {icon}

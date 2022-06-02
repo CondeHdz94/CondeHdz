@@ -16,3 +16,12 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .container__contactMe {
+        .container__form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

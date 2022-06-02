@@ -7,7 +7,7 @@ function Skills() {
     const [isSelected, setIsSelected] = useState(null)
 
     return (
-        <div className="container container__home bg-none" id="Skills">
+        <div className="container container__skills bg-none" id="Skills">
             <div className="container__info bg-none">
                 <h2 className="color--black title align-self--center bg-none">
                     Skills
@@ -16,7 +16,7 @@ function Skills() {
                     My technical level
                 </p>
 
-                <ul className="">
+                <ul className="skill__list ">
                     {dataSkills.map((item, index) => (
                         <CollapsedList
                             key={index}

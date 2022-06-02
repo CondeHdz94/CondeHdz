@@ -15,8 +15,15 @@
         border: 1px solid rgba(255, 255, 255, 0.18);
         padding: 2rem;
         margin-bottom: 2rem;
+        transition: all 0.3s;
 
-        &::before {
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: all 0.3s;
+        }
+
+        &:before {
             content: '';
             position: absolute;
             background-color: var(--var-secondary-dark-gray);
@@ -42,6 +49,25 @@
         }
         small {
             margin-top: 1rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .container__services {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+        }
+    }
+}
+
+@media (min-width: 1080px) {
+    .container__services {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }

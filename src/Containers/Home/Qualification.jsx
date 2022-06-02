@@ -7,7 +7,10 @@ import { qualificationEducation, qualificationWork } from '../../Data/jsonBase'
 
 function Qualification() {
     return (
-        <div className="container container__qualification bg-none">
+        <div
+            className="container container__qualification bg-none"
+            id="Qualifications"
+        >
             <div className="container__info bg-none">
                 <h2 className="color--black title align-self--center bg-none">
                     Qualification
@@ -29,7 +32,7 @@ function Qualification() {
                         />
                     ))}
                 </ul>
-                <button className="">more info...</button>
+                <button className="">More information</button>
 
                 <span className="material-icons-outlined color--black icon__qualification bg-none">
                     work_outline

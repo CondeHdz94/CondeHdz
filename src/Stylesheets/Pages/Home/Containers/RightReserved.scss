@@ -5,3 +5,9 @@ small.rightReserved {
     align-items: center;
     padding: 0.3rem 0rem;
 }
+
+@media (min-width: 1080px) {
+    small.rightReserved {
+        margin-bottom: 0rem;
+    }
+}
