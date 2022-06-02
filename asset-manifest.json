@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/CondeHdz94/CondeHdz/static/css/main.73a80c93.css",
+    "main.js": "/CondeHdz94/CondeHdz/static/js/main.ae0a64b0.js",
+    "static/media/icon_instagram.svg": "/CondeHdz94/CondeHdz/static/media/icon_instagram.4ac2c1e221b6fe316335.svg",
+    "static/media/icon_twitter.svg": "/CondeHdz94/CondeHdz/static/media/icon_twitter.295aca706adcdd7f17ec.svg",
+    "static/media/icon_behance.svg": "/CondeHdz94/CondeHdz/static/media/icon_behance.8fea5b4964427b3826ff.svg",
+    "static/media/icon_linkedin.svg": "/CondeHdz94/CondeHdz/static/media/icon_linkedin.7b88d06d1be1758a95be.svg",
+    "index.html": "/CondeHdz94/CondeHdz/index.html",
+    "static/media/Mountains.svg": "/CondeHdz94/CondeHdz/static/media/Mountains.36d3140e23263d0530ea.svg",
+    "static/media/icon_github.svg": "/CondeHdz94/CondeHdz/static/media/icon_github.f5b75fc6466fc9556d11.svg",
+    "main.73a80c93.css.map": "/CondeHdz94/CondeHdz/static/css/main.73a80c93.css.map",
+    "main.ae0a64b0.js.map": "/CondeHdz94/CondeHdz/static/js/main.ae0a64b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73a80c93.css",
+    "static/js/main.ae0a64b0.js"
+  ]
+}
