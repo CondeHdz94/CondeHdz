@@ -7,7 +7,7 @@ function PercentList({ title, percent, setHeightLi }) {
     const parentRef = useRef()
     useEffect(() => {
         setHeightLi(parentRef.current.scrollHeight)
-    }, [parentRef])
+    }, [parentRef, setHeightLi])
 
     useEffect(() => {
         setInterval(() => setPercentCount(Math.floor(percent) + 1), 300)
@@ -23,7 +23,7 @@ function PercentList({ title, percent, setHeightLi }) {
         return () => {
             clearInterval(interval)
         }
-    }, [])
+    }, [percent])
 
     return (
         <li ref={parentRef}>

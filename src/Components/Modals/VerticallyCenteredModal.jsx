@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import '../../Stylesheets/Components/Modals/VerticallyCenteredModal.scss'
 
 export default function VerticallyCenteredModal({
@@ -7,11 +7,11 @@ export default function VerticallyCenteredModal({
     info,
     title,
 }) {
-    const [showModal, setshowModal] = useState(false)
+    // const [showModal, setshowModal] = useState(false)
 
-    useEffect(() => {
-        setshowModal(show)
-    }, [show])
+    // useEffect(() => {
+    //     setshowModal(show)
+    // }, [show])
 
     return (
         <>

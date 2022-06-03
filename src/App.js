@@ -16,8 +16,8 @@ function App() {
                 <div className="App">
                     {/* <h1>Navbar...</h1> */}
                     <Routes>
-                        <Route path="/page" element={<Page />}></Route>
-                        <Route path="/" element={<Home />}></Route>
+                        <Route path="/CondeHdz/page" element={<Page />}></Route>
+                        <Route path="/CondeHdz" element={<Home />}></Route>
                     </Routes>
                 </div>
             </div>

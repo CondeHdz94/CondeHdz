@@ -40,6 +40,11 @@
         .logo__Letters {
             animation: move-opacity 1.2s cubic-bezier(0.5, 0, 0.5, 1);
         }
+        .logo__Letters--m {
+            opacity: 0;
+            animation: move-opacity-m 1.2s cubic-bezier(0.5, 0, 0.5, 1) forwards;
+            animation-delay: 0.5s;
+        }
     }
 }
 
@@ -94,5 +99,15 @@
     }
     100% {
         opacity: 1;
+    }
+}
+@keyframes move-opacity-m {
+    0% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
