@@ -423,7 +423,6 @@ form {
     border: 1px solid transparent;
     border-radius: 0.25rem;
     display: flex;
-    top: 10px;
     left: 10px;
     z-index: 5;
     width: 97%;
@@ -439,12 +438,16 @@ form {
 }
 
 .showAlert {
+    top: 10px;
+
     opacity: 1;
     transform: translateY(0px);
     transition: all 0.5s ease-in-out;
 }
 
 .hideAlert {
+    top: -10px;
+
     opacity: 0;
     transform: translateY(-57px);
     transition: all 1s ease-in-out;
@@ -499,17 +502,18 @@ form {
 @media (min-width: 768px) {
     /* The alert message box */
     .alert {
-        top: 10px;
         left: unset;
         right: 2px;
         max-width: 256px;
     }
 
     .showAlert {
+        top: 10px;
         transform: translateX(-12px);
     }
 
     .hideAlert {
+        top: -10px;
         transform: translateX(326px);
     }
 }
@@ -526,6 +530,7 @@ form {
     align-items: center;
     justify-content: center;
     opacity: 0;
+    border: solid 1px var(--var-white);
 
     span {
         color: var(--var-white);
