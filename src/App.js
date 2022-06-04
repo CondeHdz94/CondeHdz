@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import Page from './Pages/Page'
 import NavMini from './Components/Navigation'
+import ScrollUp from './Components/ScrollUp'
 
 function App() {
     var modecolor = localStorage.getItem('colorMode')
@@ -12,6 +13,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className={`mode_${mode}`}>
+                <ScrollUp />
                 <NavMini mode={mode} setMode={setMode} />
                 <div className="App">
                     {/* <h1>Navbar...</h1> */}
