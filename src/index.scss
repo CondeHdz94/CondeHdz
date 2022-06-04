@@ -427,6 +427,7 @@ form {
     z-index: 5;
     width: 97%;
     box-sizing: border-box;
+    top: -10px;
 
     span {
         height: 24px;
@@ -503,17 +504,17 @@ form {
     /* The alert message box */
     .alert {
         left: unset;
-        right: 2px;
+        right: -256px;
         max-width: 256px;
+        top: 10px;
     }
 
     .showAlert {
-        top: 10px;
-        transform: translateX(-12px);
+        right: 10px;
+        // transform: translateX(-258px);
     }
 
     .hideAlert {
-        top: -10px;
         transform: translateX(326px);
     }
 }
@@ -551,7 +552,12 @@ form {
 
 @media (min-width: 1080px) {
     /* The alert message box */
-    .alert {
+    .alert,
+    .showAlert {
         top: 60px;
+    }
+
+    .scroll__up {
+        cursor: pointer;
     }
 }
