@@ -1,7 +1,7 @@
 export const dataInfo = [
-    { old: '04+', info: 'Years experience' },
-    { old: '20+', info: 'Completed project' },
-    { old: '03+', info: 'Companies worked' },
+    { old: '04+', info: 'Years', desc: 'experience' },
+    { old: '20+', info: 'Completed', desc: 'project' },
+    { old: '03+', info: 'Companies', desc: 'worked' },
 ]
 
 export const dataSkills = [

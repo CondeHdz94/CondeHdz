@@ -17,12 +17,6 @@
         margin-bottom: 2rem;
         transition: all 0.3s;
 
-        &:hover {
-            cursor: pointer;
-            transform: scale(1.05);
-            transition: all 0.3s;
-        }
-
         &:before {
             content: '';
             position: absolute;
@@ -65,6 +59,13 @@
 
 @media (min-width: 1080px) {
     .container__services {
+        .container__neumorphism {
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: all 0.3s;
+            }
+        }
         ul {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
