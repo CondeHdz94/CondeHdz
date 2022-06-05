@@ -2,7 +2,12 @@ import React from 'react'
 import GlassQualification from '../../Components/GlassQualification'
 import GlassQualificationWork from '../../Components/GlassQualificationWork'
 import '../../Stylesheets/Pages/Home/Containers/Qualification.scss'
-import { qualificationEducation, qualificationWork } from '../../Data/jsonBase'
+import {
+    qualificationEducation,
+    qualificationWork,
+    qualificationExtraCourses,
+} from '../../Data/jsonBase'
+import SwiperCarousel from '../../Components/SwiperCarousel'
 //import LogoSistelSVG from '../../Components/SVG/LogoSistelSVG'
 
 function Qualification() {
@@ -32,8 +37,13 @@ function Qualification() {
                         />
                     ))}
                 </ul>
-                <button className="">More information</button>
-
+                {/* <button className="">More information</button> */}
+                <p className="bg-none title-swiper">Additional information</p>
+                <div className="bg-none">
+                    <SwiperCarousel
+                        infoSwiperSlide={qualificationExtraCourses}
+                    />
+                </div>
                 <span className="material-icons-outlined color--black icon__qualification bg-none">
                     work_outline
                 </span>

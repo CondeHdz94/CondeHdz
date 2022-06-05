@@ -132,6 +132,49 @@ export const qualificationEducation = [
     },
 ]
 
+export const qualificationExtraCourses = [
+    {
+        year: '2020',
+        title: 'Online Course',
+        info: 'Web Development with PHP',
+    },
+    {
+        year: '2020',
+        title: 'Online Course',
+        info: 'Modern JavaScript',
+    },
+    {
+        year: '2021',
+        title: 'Online Course',
+        info: 'CSS Responsive, Flex, Grid y Bootstrap',
+    },
+    {
+        year: '2021',
+        title: 'Online Course',
+        info: 'React.js Practical Course',
+    },
+    {
+        year: '2021',
+        title: 'Online Course',
+        info: 'React Router y Redux 2019',
+    },
+    {
+        year: '2022',
+        title: 'Online Course',
+        info: 'Curso de Frontend Developer',
+    },
+    {
+        year: '2022',
+        title: 'Online Course',
+        info: 'Curso de Diseño de Interfaces',
+    },
+    {
+        year: '2022',
+        title: 'Online Course',
+        info: 'Curso Básico de POO con JS',
+    },
+]
+
 export const qualificationWork = [
     {
         title: 'Sistel',

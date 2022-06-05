@@ -349,7 +349,7 @@ form {
         transform: scale(0%);
     }
     80% {
-        transform: scale(120%);
+        transform: scale(105%);
     }
     100% {
         transform: scale(100%);
@@ -375,7 +375,7 @@ form {
     }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
     .container {
         margin: 0px auto;
         max-width: 960px;
@@ -550,7 +550,7 @@ form {
     transition: all 0.3s ease-in-out;
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
     /* The alert message box */
     .alert,
     .showAlert {

@@ -10,6 +10,13 @@
         align-self: center;
     }
 
+    .title-swiper {
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        align-self: initial;
+        color: var(--var-secondary-dark-gray);
+    }
+
     .container__glass {
         display: flex;
         flex-direction: column;
