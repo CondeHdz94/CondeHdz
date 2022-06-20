@@ -3,7 +3,7 @@ import '../Stylesheets/Components/MenuMin.scss'
 import { menuItems } from '../Data/jsonBase'
 import { Link } from 'react-scroll'
 
-function MenuMin({ showMenu, setShowMenu }) {
+function MenuMin({ showMenu, setShowMenu, setColorTheme }) {
     const [isSelected, setIsSelected] = useState(null)
 
     const toggleMenu = (i) => {
@@ -16,6 +16,50 @@ function MenuMin({ showMenu, setShowMenu }) {
     return (
         <>
             <div className={`bg__menuMin ${showMenu && 'showMenuBg'}`}></div>
+            <div className={`theme__colors ${showMenu && 'showMenuColors'}`}>
+                <ul>
+                    <li>
+                        <span
+                            className="material-icons-outlined color--blue"
+                            onClick={() => setColorTheme('--blue')}
+                        >
+                            water_drop
+                        </span>
+                    </li>
+                    <li>
+                        <span
+                            className="material-icons-outlined color--red"
+                            onClick={() => setColorTheme('--red')}
+                        >
+                            water_drop
+                        </span>
+                    </li>
+                    <li>
+                        <span
+                            className="material-icons-outlined color--green"
+                            onClick={() => setColorTheme('--green')}
+                        >
+                            water_drop
+                        </span>
+                    </li>
+                    <li>
+                        <span
+                            className="material-icons-outlined color--purple"
+                            onClick={() => setColorTheme('--purple')}
+                        >
+                            water_drop
+                        </span>
+                    </li>
+                    <li>
+                        <span
+                            className="material-icons-outlined color--gray"
+                            onClick={() => setColorTheme('')}
+                        >
+                            water_drop
+                        </span>
+                    </li>
+                </ul>
+            </div>
             <div
                 className={`menu__container ${showMenu && 'showMenu'} `}
                 // style={{ bottom: `${showMenu ? 'showMenu' : '0px'}` }}

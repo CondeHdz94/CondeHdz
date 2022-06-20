@@ -38,7 +38,7 @@ function Qualification() {
                     ))}
                 </ul>
                 {/* <button className="">More information</button> */}
-                <p className="bg-none title-swiper">Additional information</p>
+                <p className="bg-none title-swiper">Supplementary training</p>
                 <div className="bg-none">
                     <SwiperCarousel
                         infoSwiperSlide={qualificationExtraCourses}

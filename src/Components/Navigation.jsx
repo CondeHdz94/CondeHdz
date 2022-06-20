@@ -6,9 +6,10 @@ import MenuMin from './MenuMin'
 import { menuItems } from '../Data/jsonBase'
 import { Link } from 'react-scroll'
 
-function Navigation({ mode, setMode }) {
+function Navigation({ mode, setMode, addColor, setAddColor }) {
     const [isSelected, setIsSelected] = useState(null)
     const [showMenu, setShowMenu] = useState(false)
+    const [colorTheme, setColorTheme] = useState(addColor)
 
     const handleClickMode = () => {
         if (mode !== 'white') {
@@ -20,7 +21,9 @@ function Navigation({ mode, setMode }) {
 
     useEffect(() => {
         localStorage.setItem('colorMode', mode)
-    }, [mode])
+        localStorage.setItem('colorAdded', colorTheme)
+        setAddColor(colorTheme)
+    }, [mode, colorTheme, setAddColor])
 
     const toggleMenu = (i) => {
         if (isSelected === i) {
@@ -31,7 +34,11 @@ function Navigation({ mode, setMode }) {
 
     return (
         <>
-            <MenuMin showMenu={showMenu} setShowMenu={setShowMenu} />
+            <MenuMin
+                showMenu={showMenu}
+                setShowMenu={setShowMenu}
+                setColorTheme={setColorTheme}
+            />
             <div className="nav__container ">
                 <nav className="bg-none">
                     <div className="nav__container__nav__logo bg-none">

@@ -2,19 +2,30 @@ import React, { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import Page from './Pages/Page'
-import NavMini from './Components/Navigation'
+import Navigation from './Components/Navigation'
 import ScrollUp from './Components/ScrollUp'
 
 function App() {
     var modecolor = localStorage.getItem('colorMode')
         ? localStorage.getItem('colorMode')
         : 'white'
+    var colorAdded = localStorage.getItem('colorAdded')
+        ? localStorage.getItem('colorAdded')
+        : ''
+
     const [mode, setMode] = useState(modecolor)
+    const [addColor, setAddColor] = useState(colorAdded)
     return (
         <BrowserRouter>
-            <div className={`mode_${mode}`}>
+            {/* <figure className="changeFigure"></figure> */}
+            <div className={`mode_${mode}${colorAdded && addColor}`}>
                 <ScrollUp />
-                <NavMini mode={mode} setMode={setMode} />
+                <Navigation
+                    mode={mode}
+                    setMode={setMode}
+                    addColor={addColor}
+                    setAddColor={setAddColor}
+                />
                 <div className="App">
                     {/* <h1>Navbar...</h1> */}
                     <Routes>
