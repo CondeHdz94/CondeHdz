@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CondeHdz/static/css/main.c87f54a6.css",
+    "main.css": "/CondeHdz/static/css/main.4cf66322.css",
     "main.js": "/CondeHdz/static/js/main.3efff947.js",
     "static/js/787.7bb606d9.chunk.js": "/CondeHdz/static/js/787.7bb606d9.chunk.js",
     "service-worker.js": "/CondeHdz/service-worker.js",
@@ -11,12 +11,12 @@
     "index.html": "/CondeHdz/index.html",
     "static/media/Mountains.svg": "/CondeHdz/static/media/Mountains.36d3140e23263d0530ea.svg",
     "static/media/icon_github.svg": "/CondeHdz/static/media/icon_github.f5b75fc6466fc9556d11.svg",
-    "main.c87f54a6.css.map": "/CondeHdz/static/css/main.c87f54a6.css.map",
+    "main.4cf66322.css.map": "/CondeHdz/static/css/main.4cf66322.css.map",
     "main.3efff947.js.map": "/CondeHdz/static/js/main.3efff947.js.map",
     "787.7bb606d9.chunk.js.map": "/CondeHdz/static/js/787.7bb606d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c87f54a6.css",
+    "static/css/main.4cf66322.css",
     "static/js/main.3efff947.js"
   ]
 }
