@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CondeHdz/static/css/main.4cf66322.css",
-    "main.js": "/CondeHdz/static/js/main.3efff947.js",
+    "main.js": "/CondeHdz/static/js/main.d5e8802e.js",
     "static/js/787.7bb606d9.chunk.js": "/CondeHdz/static/js/787.7bb606d9.chunk.js",
     "service-worker.js": "/CondeHdz/service-worker.js",
     "static/media/icon_instagram.svg": "/CondeHdz/static/media/icon_instagram.4ac2c1e221b6fe316335.svg",
@@ -12,11 +12,11 @@
     "static/media/Mountains.svg": "/CondeHdz/static/media/Mountains.36d3140e23263d0530ea.svg",
     "static/media/icon_github.svg": "/CondeHdz/static/media/icon_github.f5b75fc6466fc9556d11.svg",
     "main.4cf66322.css.map": "/CondeHdz/static/css/main.4cf66322.css.map",
-    "main.3efff947.js.map": "/CondeHdz/static/js/main.3efff947.js.map",
+    "main.d5e8802e.js.map": "/CondeHdz/static/js/main.d5e8802e.js.map",
     "787.7bb606d9.chunk.js.map": "/CondeHdz/static/js/787.7bb606d9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4cf66322.css",
-    "static/js/main.3efff947.js"
+    "static/js/main.d5e8802e.js"
   ]
 }
