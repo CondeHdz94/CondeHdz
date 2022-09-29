@@ -118,90 +118,99 @@ export default function ContactMe() {
                 >
                     <label className="color--secondary-gray bg-none">
                         Name
-                    </label>
-                    <input
-                        name="Name"
-                        className={
-                            errors.Name?.type === 'required'
-                                ? 'input__error'
-                                : ''
-                        }
-                        type="text"
-                        {...register('Name', { required: true, maxLength: 30 })}
-                    />
-                    {errors.Name?.type === 'required' && (
-                        <small className=" errorTag">'Name is required'</small>
-                    )}
-                    <label className="color--secondary-gray">Email</label>
-                    <input
-                        name="Email"
-                        className={`bg-none ${
-                            errors.Email?.type === 'required' ||
-                            (!validaEmail && validaEmail !== undefined)
-                                ? 'input__error'
-                                : ''
-                        }`}
-                        type="text"
-                        // name="email"
-                        {...register('Email', {
-                            required: true,
-                            validate: stateEmail && handleEmailValidation,
-                            onChange: handleChange,
-                        })}
-                    />
-                    {errors.Email?.type === 'required' ? (
-                        <small className=" errorTag">'Email is required'</small>
-                    ) : (
-                        !validaEmail &&
-                        validaEmail !== undefined && (
+                        <input
+                            name="Name"
+                            className={
+                                errors.Name?.type === 'required'
+                                    ? 'input__error'
+                                    : ''
+                            }
+                            type="text"
+                            {...register('Name', {
+                                required: true,
+                                maxLength: 30,
+                            })}
+                        />
+                        {errors.Name?.type === 'required' && (
                             <small className=" errorTag">
-                                'An email address must contain the following
-                                format: <b>name@example.com</b>'
+                                'Name is required'
                             </small>
-                        )
-                    )}
+                        )}
+                    </label>
+                    <label className="color--secondary-gray">
+                        Email
+                        <input
+                            name="Email"
+                            className={`bg-none ${
+                                errors.Email?.type === 'required' ||
+                                (!validaEmail && validaEmail !== undefined)
+                                    ? 'input__error'
+                                    : ''
+                            }`}
+                            type="text"
+                            // name="email"
+                            {...register('Email', {
+                                required: true,
+                                validate: stateEmail && handleEmailValidation,
+                                onChange: handleChange,
+                            })}
+                        />
+                        {errors.Email?.type === 'required' ? (
+                            <small className=" errorTag">
+                                'Email is required'
+                            </small>
+                        ) : (
+                            !validaEmail &&
+                            validaEmail !== undefined && (
+                                <small className=" errorTag">
+                                    'An email address must contain the following
+                                    format: <b>name@example.com</b>'
+                                </small>
+                            )
+                        )}
+                    </label>
                     <label className="color--secondary-gray bg-none">
                         Project
+                        <input
+                            name="Project"
+                            className={
+                                errors.Project?.type === 'required'
+                                    ? 'input__error'
+                                    : ''
+                            }
+                            type="text"
+                            {...register('Project', {
+                                required: true,
+                                maxLength: 30,
+                            })}
+                        />
+                        {errors.Project?.type === 'required' && (
+                            <small className=" errorTag">
+                                'Project is required'
+                            </small>
+                        )}
                     </label>
-                    <input
-                        name="Project"
-                        className={
-                            errors.Project?.type === 'required'
-                                ? 'input__error'
-                                : ''
-                        }
-                        type="text"
-                        {...register('Project', {
-                            required: true,
-                            maxLength: 30,
-                        })}
-                    />
-                    {errors.Project?.type === 'required' && (
-                        <small className=" errorTag">
-                            'Project is required'
-                        </small>
-                    )}
                     <label className="color--secondary-gray bg-none">
                         Message
+                        <textarea
+                            name="Message"
+                            className={
+                                errors.Message?.type === 'required'
+                                    ? 'input__error'
+                                    : ''
+                            }
+                            type="text"
+                            {...register('Message', {
+                                required: true,
+                                maxLength: 255,
+                            })}
+                        />
+                        {errors.Message?.type === 'required' && (
+                            <small className=" errorTag">
+                                'Message is required'
+                            </small>
+                        )}
                     </label>
-                    <textarea
-                        name="Message"
-                        className={
-                            errors.Message?.type === 'required'
-                                ? 'input__error'
-                                : ''
-                        }
-                        type="text"
-                        {...register('Message', {
-                            required: true,
-                            maxLength: 255,
-                        })}
-                    />
-                    {errors.Message?.type === 'required' && (
-                        <small className=" errorTag">
-                            'Message is required'
-                        </small>
-                    )}
                     {/* <div className="container__button">
                         <Loading />
                         <input type="submit" onClick={onSubmit} />

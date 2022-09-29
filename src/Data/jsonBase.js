@@ -178,15 +178,15 @@ export const qualificationExtraCourses = [
 export const qualificationWork = [
     {
         title: 'Sistel',
-        info: 'Empresa de base tecnológica que ofrece soluciones y herramientas para formación y desarrollo del talento corporativo.',
+        info: 'Technology-based company that offers solutions and tools for training and development of corporate talent.',
     },
     {
         title: 'Taylor & Johnson',
-        info: 'Empresa dedicada al desarrollo e implementación de Software Bancario.',
+        info: 'Company dedicated to the development and implementation of Banking Software.',
     },
     {
         title: 'UNI2',
-        info: 'Entidad de microcrédito enfocada en financiar y abrir oportunidades de crédito formal.',
+        info: 'Microcredit entity focused on financing and opening formal credit opportunities.',
     },
 ]
 
