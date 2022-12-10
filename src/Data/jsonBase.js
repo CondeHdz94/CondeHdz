@@ -4,27 +4,101 @@ export const dataInfo = [
     { old: '03+', info: 'Companies', desc: 'worked' },
 ]
 
+/**https://fonts.google.com/icons **/
 export const dataSkills = [
     {
         icon: 'code',
-        title: 'Frontend development',
-        info: 'More than 4 years',
+        title: 'Programming',
+        info: 'Programming languages',
         subItems: [
-            {
-                title: 'HTML',
-                percent: '95',
-            },
-            {
-                title: 'CSS',
-                percent: '93',
-            },
             {
                 title: 'JavaScript',
                 percent: '90',
             },
             {
-                title: 'React',
+                title: 'TypeScript',
+                percent: '70',
+            },
+            {
+                title: 'Phyton',
+                percent: '30',
+            },
+            {
+                title: 'PHP',
+                percent: '50',
+            },
+        ],
+    },
+    {
+        icon: 'dns',
+        title: 'Technologies',
+        info: 'Technologies and frameworks',
+        subItems: [
+            {
+                title: 'CSS',
                 percent: '85',
+            },
+            {
+                title: 'MySQL',
+                percent: '50',
+            },
+            {
+                title: 'Firebase',
+                percent: '50',
+            },
+            {
+                title: 'React',
+                percent: '80',
+            },
+            {
+                title: 'Svelte',
+                percent: '0',
+            },
+        ],
+    },
+    {
+        icon: 'playlist_add_check',
+        title: 'Testing',
+        info: 'Testing and documentation',
+        subItems: [
+            {
+                title: 'Cypress',
+                percent: '50',
+            },
+            {
+                title: 'Jest',
+                percent: '80',
+            },
+            {
+                title: 'Testing Library',
+                percent: '75',
+            },
+            {
+                title: 'Storybook',
+                percent: '70',
+            },
+        ],
+    },
+    {
+        icon: 'palette',
+        title: 'Design',
+        info: 'Layout, usability and experience',
+        subItems: [
+            {
+                title: 'Adobe Photoshop',
+                percent: '60',
+            },
+            {
+                title: 'Adobe Illustrator',
+                percent: '60',
+            },
+            {
+                title: 'Adobe XD',
+                percent: '80',
+            },
+            {
+                title: 'Figma',
+                percent: '87',
             },
             {
                 title: 'UX',
@@ -37,51 +111,9 @@ export const dataSkills = [
         ],
     },
     {
-        icon: 'dns',
-        title: 'Backend development',
-        info: 'More than 2 years',
-        subItems: [
-            {
-                title: 'MySQL',
-                percent: '50',
-            },
-            {
-                title: 'Firebase',
-                percent: '50',
-            },
-            {
-                title: 'Phyton',
-                percent: '30',
-            },
-        ],
-    },
-    {
-        icon: 'palette',
-        title: 'Design',
-        info: 'More than 4 years',
-        subItems: [
-            {
-                title: 'Adobe Photoshop',
-                percent: '70',
-            },
-            {
-                title: 'Adobe Illustrator',
-                percent: '70',
-            },
-            {
-                title: 'Adobe XD',
-                percent: '80',
-            },
-            {
-                title: 'Figma',
-                percent: '87',
-            },
-        ],
-    },
-    {
         icon: 'movie',
         title: 'Animation and Video',
-        info: 'More than 1 years',
+        info: 'Programs for animation and video',
         subItems: [
             {
                 title: 'Adobe Premiere Pro',
@@ -100,7 +132,7 @@ export const dataSkills = [
     {
         icon: 'tune',
         title: 'Audio',
-        info: 'More than 1 years',
+        info: 'auditive adjusts',
         subItems: [
             {
                 title: 'Adobe Audition',
@@ -135,43 +167,48 @@ export const qualificationEducation = [
 export const qualificationExtraCourses = [
     {
         year: '2020',
-        title: 'Online Course',
+        title: 'Online Course - PHP',
         info: 'Web Development with PHP',
     },
     {
         year: '2020',
-        title: 'Online Course',
+        title: 'Online Course - JS',
         info: 'Modern JavaScript',
     },
     {
         year: '2021',
-        title: 'Online Course',
+        title: 'Online Course - CSS',
         info: 'CSS Responsive, Flex, Grid y Bootstrap',
     },
     {
         year: '2021',
-        title: 'Online Course',
+        title: 'Online Course - REACT',
         info: 'React.js Practical Course',
     },
     {
         year: '2021',
-        title: 'Online Course',
+        title: 'Online Course - REACT',
         info: 'React Router y Redux 2019',
     },
     {
         year: '2022',
-        title: 'Online Course',
-        info: 'Curso de Frontend Developer',
+        title: 'Online Course - JS',
+        info: 'Frontend Developer Course',
     },
     {
         year: '2022',
-        title: 'Online Course',
-        info: 'Curso de Diseño de Interfaces',
+        title: 'Online Course - UX/UI',
+        info: 'Interface Design Course',
     },
     {
         year: '2022',
-        title: 'Online Course',
-        info: 'Curso Básico de POO con JS',
+        title: 'Online Course - JS',
+        info: 'Basic Course of OOP with JS',
+    },
+    {
+        year: '2022',
+        title: 'Online Course - TS',
+        info: 'Build JS applications using TypeScript',
     },
 ]
 
