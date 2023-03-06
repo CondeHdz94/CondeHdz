@@ -286,7 +286,7 @@ export const contactMe = [
     {
         icon: 'smartphone',
         title: 'Call me',
-        text: '312 721 6626',
+        text: '+57 312 721 6626',
     },
     {
         icon: 'mail',
