@@ -15,7 +15,11 @@ function InformacionViewMore({
     }
 
     return (
-        <li className="container__neumorphism" onClick={handleClick}>
+        <li
+            data-testid="t-open-information"
+            className="container__neumorphism"
+            onClick={handleClick}
+        >
             <div className="container__service__tag bg-none">
                 <span className="material-icons-outlined icon color--black bg-none">
                     {icon}

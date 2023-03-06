@@ -24,6 +24,7 @@ function CollapsedList({
     return (
         <li className="m-b-li">
             <div
+                data-testid="t-open-list"
                 className={
                     isSelected === indexIn
                         ? 'collapsed__card list--selected'

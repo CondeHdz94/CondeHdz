@@ -20,6 +20,7 @@ function MenuMin({ showMenu, setShowMenu, setColorTheme }) {
                 <ul>
                     <li>
                         <span
+                            data-testid="t-color-blue"
                             className="material-icons-outlined color--blue"
                             onClick={() => setColorTheme('--blue')}
                         >
@@ -28,6 +29,7 @@ function MenuMin({ showMenu, setShowMenu, setColorTheme }) {
                     </li>
                     <li>
                         <span
+                            data-testid="t-color-red"
                             className="material-icons-outlined color--red"
                             onClick={() => setColorTheme('--red')}
                         >
@@ -36,6 +38,7 @@ function MenuMin({ showMenu, setShowMenu, setColorTheme }) {
                     </li>
                     <li>
                         <span
+                            data-testid="t-color-green"
                             className="material-icons-outlined color--green"
                             onClick={() => setColorTheme('--green')}
                         >
@@ -44,6 +47,7 @@ function MenuMin({ showMenu, setShowMenu, setColorTheme }) {
                     </li>
                     <li>
                         <span
+                            data-testid="t-color-purple"
                             className="material-icons-outlined color--purple"
                             onClick={() => setColorTheme('--purple')}
                         >
@@ -52,6 +56,7 @@ function MenuMin({ showMenu, setShowMenu, setColorTheme }) {
                     </li>
                     <li>
                         <span
+                            data-testid="t-color-gray"
                             className="material-icons-outlined color--gray"
                             onClick={() => setColorTheme('')}
                         >
@@ -67,7 +72,6 @@ function MenuMin({ showMenu, setShowMenu, setColorTheme }) {
                 <ul>
                     {menuItems.map((item, index) => (
                         <li className={` menu__list `} key={index}>
-                            {' '}
                             <Link
                                 to={item.menuId}
                                 spy={true}

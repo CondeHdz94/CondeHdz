@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-function GlassQualification({ index, title, info }) {
+function GlassQualificationWork({ index, title, info }) {
     const [itercalated, setItercalated] = useState(true)
     useEffect(() => {
         if (index % 2 === 0) {
@@ -22,4 +22,4 @@ function GlassQualification({ index, title, info }) {
     )
 }
 
-export default GlassQualification
+export default GlassQualificationWork

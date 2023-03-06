@@ -29,7 +29,9 @@ function PercentList({ title, percent, setHeightLi }) {
         <li ref={parentRef}>
             <div className="collapsed__card--text">
                 <div className="button-att color--black">{title}</div>
-                <small>{`${percentCountNum}%`}</small>
+                <small data-testid="t-percentList">{`${
+                    percentCountNum > 1 ? `${percentCountNum}%` : 'Learning...'
+                }`}</small>
             </div>
             <div className="skills__bar">
                 <span

@@ -67,15 +67,15 @@ export const dataSkills = [
             },
             {
                 title: 'Jest',
-                percent: '80',
+                percent: '60',
             },
             {
                 title: 'Testing Library',
-                percent: '75',
+                percent: '56',
             },
             {
                 title: 'Storybook',
-                percent: '70',
+                percent: '0',
             },
         ],
     },

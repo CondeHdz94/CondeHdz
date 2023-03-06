@@ -63,8 +63,10 @@ function Navigation({ mode, setMode, addColor, setAddColor }) {
                         >
                             {menuItems.map((item, index) => (
                                 <li
-                                    className={` nav__menu bg-none`}
+                                    className={`nav__menu bg-none list-menu-${index}`}
+                                    data-testid={`list-menu-${index}`}
                                     key={index}
+                                    alt={`list-menu-${index}`}
                                 >
                                     <Link
                                         to={item.menuId}
@@ -87,6 +89,7 @@ function Navigation({ mode, setMode, addColor, setAddColor }) {
                             ))}
                         </ul>
                         <span
+                            data-testid="t-toggle-dark-mode"
                             className="material-icons-outlined m-l color--black"
                             onClick={handleClickMode}
                         >
@@ -98,6 +101,7 @@ function Navigation({ mode, setMode, addColor, setAddColor }) {
                         </span>
 
                         <span
+                            data-testid="t-toggle-menu"
                             className="material-icons-outlined m-l color--black invert-h nav__movile"
                             onClick={() => setShowMenu(!showMenu)}
                         >

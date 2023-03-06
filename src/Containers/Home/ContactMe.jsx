@@ -47,7 +47,6 @@ export default function ContactMe() {
                         setLoadingValidate(null)
                     }, 1500)
 
-                    console.log(result.text)
                     setMessage(result.text)
                     setTypeAlert('success')
                     setShowAlert(true)
@@ -58,7 +57,6 @@ export default function ContactMe() {
                         setLoadingValidate(null)
                     }, 1500)
                     setLoadingValidate(false)
-                    console.log(error.text)
                     setMessage(error.text)
                     setTypeAlert('error')
                     setShowAlert(true)
@@ -119,6 +117,8 @@ export default function ContactMe() {
                     <label className="color--secondary-gray bg-none">
                         Name
                         <input
+                            autoComplete="off"
+                            alt={'Name'}
                             name="Name"
                             className={
                                 errors.Name?.type === 'required'
@@ -140,6 +140,8 @@ export default function ContactMe() {
                     <label className="color--secondary-gray">
                         Email
                         <input
+                            autoComplete="off"
+                            alt={'Email'}
                             name="Email"
                             className={`bg-none ${
                                 errors.Email?.type === 'required' ||
@@ -172,6 +174,8 @@ export default function ContactMe() {
                     <label className="color--secondary-gray bg-none">
                         Project
                         <input
+                            autoComplete="off"
+                            alt={'Project'}
                             name="Project"
                             className={
                                 errors.Project?.type === 'required'
@@ -193,6 +197,9 @@ export default function ContactMe() {
                     <label className="color--secondary-gray bg-none">
                         Message
                         <textarea
+                            autoComplete="off"
+                            alt={'MessageArea'}
+                            data-testid={`MessageArea`}
                             name="Message"
                             className={
                                 errors.Message?.type === 'required'
@@ -217,6 +224,7 @@ export default function ContactMe() {
                     </div> */}
                     <div className="container__button">
                         <button
+                            data-testid={'SubmitBtn'}
                             type="submit"
                             disabled={
                                 (loading || loadingValidate !== null) && true

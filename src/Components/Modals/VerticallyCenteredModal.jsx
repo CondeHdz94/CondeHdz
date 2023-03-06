@@ -24,8 +24,8 @@ export default function VerticallyCenteredModal({
                     >
                         <h2>{title}</h2>
                         <ul className="bg-none ">
-                            {info.map((item, index) => (
-                                <li key={index}>
+                            {info.map((item, id) => (
+                                <li key={`${item}_modal_id-${id}`}>
                                     <span className="material-icons-outlined">
                                         arrow_right
                                     </span>
@@ -34,6 +34,8 @@ export default function VerticallyCenteredModal({
                             ))}
                         </ul>
                         <span
+                            data-testid="t-close-modal"
+                            name="icon_close_modal"
                             className="modal__close material-icons-outlined"
                             onClick={() => setModalShow(false)}
                         >
