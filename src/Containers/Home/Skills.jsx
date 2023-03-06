@@ -19,7 +19,7 @@ function Skills() {
                 <ul className="skill__list ">
                     {dataSkills.map((item, index) => (
                         <CollapsedList
-                            key={index}
+                            key={item.icon}
                             indexIn={index}
                             icon={item.icon}
                             title={item.title}

@@ -32,7 +32,7 @@ export default function Services() {
                         {services.map((item, index) => {
                             return (
                                 <InformacionViewMore
-                                    key={`${index}_listService`}
+                                    key={`${item.title}_listService`}
                                     value={index}
                                     icon={item.icon}
                                     title={item.title}

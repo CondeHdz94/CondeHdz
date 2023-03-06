@@ -71,7 +71,7 @@ function MenuMin({ showMenu, setShowMenu, setColorTheme }) {
             >
                 <ul>
                     {menuItems.map((item, index) => (
-                        <li className={` menu__list `} key={index}>
+                        <li className={` menu__list `} key={`${item.menuId}`}>
                             <Link
                                 to={item.menuId}
                                 spy={true}

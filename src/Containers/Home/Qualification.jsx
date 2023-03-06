@@ -28,9 +28,9 @@ function Qualification() {
                 </span>
                 <h3 className="color--black bg-none">Education</h3>
                 <ul className="bg-none">
-                    {qualificationEducation.map((item, index) => (
+                    {qualificationEducation.map((item) => (
                         <GlassQualification
-                            key={index}
+                            key={item.title}
                             year={item.year}
                             title={item.title}
                             info={item.info}
@@ -51,7 +51,7 @@ function Qualification() {
                 <ul className="bg-none">
                     {qualificationWork.map((item, index) => (
                         <GlassQualificationWork
-                            key={index}
+                            key={item.title}
                             index={index}
                             title={item.title}
                             info={item.info}

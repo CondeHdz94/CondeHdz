@@ -100,9 +100,9 @@ export default function ContactMe() {
             </div>
             <div className="container__form">
                 <ul className="bg-none">
-                    {contactMe.map((item, index) => (
+                    {contactMe.map((item) => (
                         <ContactMeInfoCard
-                            key={index}
+                            key={item.title}
                             icon={item.icon}
                             title={item.title}
                             text={item.text}

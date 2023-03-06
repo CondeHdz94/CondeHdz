@@ -27,9 +27,9 @@ function About() {
                     creative with a willingness to continuously learn.
                 </p>
                 <div className="container__info--data bg-none">
-                    {dataInfo.map((item, index) => (
+                    {dataInfo.map((item) => (
                         <InfoData
-                            key={index}
+                            key={item.info}
                             old={item.old}
                             info={item.info}
                             desc={item.desc}

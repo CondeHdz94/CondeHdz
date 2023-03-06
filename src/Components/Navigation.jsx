@@ -32,6 +32,18 @@ function Navigation({ mode, setMode, addColor, setAddColor }) {
         setIsSelected(i)
     }
 
+    const stateDarkMode = (mode) => {
+        if (mode === 'white') {
+            return 'dark_mode'
+        } else {
+            if (mode === 'dark') {
+                return 'light_mode'
+            } else {
+                return ''
+            }
+        }
+    }
+
     return (
         <>
             <MenuMin
@@ -65,7 +77,7 @@ function Navigation({ mode, setMode, addColor, setAddColor }) {
                                 <li
                                     className={`nav__menu bg-none list-menu-${index}`}
                                     data-testid={`list-menu-${index}`}
-                                    key={index}
+                                    key={`${item.menuId}`}
                                     alt={`list-menu-${index}`}
                                 >
                                     <Link
@@ -93,11 +105,7 @@ function Navigation({ mode, setMode, addColor, setAddColor }) {
                             className="material-icons-outlined m-l color--black"
                             onClick={handleClickMode}
                         >
-                            {mode === 'white'
-                                ? 'dark_mode'
-                                : mode === 'dark'
-                                ? 'light_mode'
-                                : ''}
+                            {stateDarkMode(mode)}
                         </span>
 
                         <span

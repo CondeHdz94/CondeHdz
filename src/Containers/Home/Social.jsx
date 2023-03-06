@@ -14,8 +14,8 @@ export default function Social() {
                         Multimedia Engineer
                     </div>
                     <ul className="bg-none  container__glass">
-                        {social.map((item, index) => (
-                            <li key={index} className="bg-none">
+                        {social.map((item) => (
+                            <li key={`${item.icon}`} className="bg-none">
                                 <a
                                     href={item.page}
                                     rel="noopener noreferrer"

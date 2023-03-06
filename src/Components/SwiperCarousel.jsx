@@ -46,8 +46,8 @@ export default function SwiperCarousel({ infoSwiperSlide }) {
                 modules={[Navigation, Pagination, Autoplay]}
                 className="mySwiper"
             >
-                {infoSwiperSlide.map((item, index) => (
-                    <SwiperSlide key={index}>
+                {infoSwiperSlide.map((item) => (
+                    <SwiperSlide key={item.info}>
                         <div className="bg-none container__swiper-slider">
                             <div className="qualification-swiper-info-title bg-none">
                                 <h2 className="bg-none">{item.year}</h2>
