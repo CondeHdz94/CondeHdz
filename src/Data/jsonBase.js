@@ -1,3 +1,6 @@
+import javascriptIcon from '../Components/SVG/Icons/javascript.svg'
+import typescriptIcon from '../Components/SVG/Icons/typescript.svg'
+
 export const dataInfo = [
     { old: '04+', info: 'Years', desc: 'experience' },
     { old: '20+', info: 'Completed', desc: 'projects' },
@@ -20,7 +23,7 @@ export const dataSkills = [
                 percent: '70',
             },
             {
-                title: 'Phyton',
+                title: 'Python',
                 percent: '30',
             },
             {
@@ -137,6 +140,109 @@ export const dataSkills = [
             {
                 title: 'Adobe Audition',
                 percent: '30',
+            },
+        ],
+    },
+]
+export const dataIconSkills = [
+    {
+        id: 1,
+        icon: 'code',
+        title: 'Programming',
+        info: 'Programming languages',
+        subItems: [
+            {
+                id: 1,
+                icon: javascriptIcon,
+                name: 'JavaScript',
+            },
+            {
+                id: 2,
+                icon: typescriptIcon,
+                name: 'TypeScript',
+            },
+            { id: 3, icon: javascriptIcon, name: 'Python' },
+            { id: 4, icon: javascriptIcon, name: 'PHP' },
+        ],
+    },
+    {
+        icon: 'dns',
+        title: 'Technologies',
+        info: 'Technologies and frameworks',
+        subItems: [
+            {
+                id: 1,
+                name: 'CSS',
+            },
+            {
+                id: 2,
+                name: 'MySQL',
+            },
+            {
+                id: 3,
+                name: 'Firebase',
+            },
+            {
+                id: 4,
+                name: 'React',
+            },
+            {
+                id: 5,
+                name: 'Svelte',
+            },
+        ],
+    },
+    {
+        icon: 'playlist_add_check',
+        title: 'Testing',
+        info: 'Testing and documentation',
+        subItems: [
+            {
+                id: 1,
+                name: 'Cypress',
+            },
+            {
+                id: 2,
+                name: 'Jest',
+            },
+            {
+                id: 3,
+                name: 'Testing Library',
+            },
+            {
+                id: 4,
+                name: 'Storybook',
+            },
+        ],
+    },
+    {
+        icon: 'palette',
+        title: 'Design',
+        info: 'Layout, usability and experience',
+        subItems: [
+            {
+                id: 1,
+                name: 'Adobe Photoshop',
+            },
+            {
+                id: 2,
+                name: 'Adobe Illustrator',
+            },
+            {
+                id: 3,
+                name: 'Adobe XD',
+            },
+            {
+                id: 4,
+                name: 'Figma',
+            },
+            {
+                id: 5,
+                name: 'UX',
+            },
+            {
+                id: 6,
+                name: 'UI',
             },
         ],
     },

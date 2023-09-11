@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import CollapsedList from '../../Components/CollapsedList'
 import '../../Stylesheets/Pages/Home/Containers/Skills.scss'
-import { dataSkills } from '../../Data/jsonBase'
+import { dataSkills, dataIconSkills } from '../../Data/jsonBase'
+import { SKILL_TYPE } from '../../Constants/ConstantsValues'
+import IconList from '../../Components/IconList'
 
 function Skills() {
     const [isSelected, setIsSelected] = useState(null)
@@ -15,21 +17,39 @@ function Skills() {
                 <p className="color--secondary-gray align-self--center bg-none">
                     My technical level
                 </p>
+                {SKILL_TYPE === 0 && (
+                    <ul className="skill__list ">
+                        {dataSkills.map((item, index) => (
+                            <CollapsedList
+                                key={item.icon}
+                                indexIn={index}
+                                icon={item.icon}
+                                title={item.title}
+                                info={item.info}
+                                subItems={
+                                    isSelected === index ? item.subItems : []
+                                }
+                                isSelected={isSelected}
+                                setIsSelected={setIsSelected}
+                            />
+                        ))}
+                    </ul>
+                )}
 
-                <ul className="skill__list ">
-                    {dataSkills.map((item, index) => (
-                        <CollapsedList
-                            key={item.icon}
-                            indexIn={index}
-                            icon={item.icon}
-                            title={item.title}
-                            info={item.info}
-                            subItems={isSelected === index ? item.subItems : []}
-                            isSelected={isSelected}
-                            setIsSelected={setIsSelected}
-                        />
-                    ))}
-                </ul>
+                {SKILL_TYPE === 1 && (
+                    <ul className="skill__list--badges bg-none">
+                        {dataIconSkills.map((item, index) => (
+                            <IconList
+                                key={item.icon}
+                                indexIn={item.id}
+                                icon={item.icon}
+                                title={item.title}
+                                info={item.info}
+                                subItems={item.subItems}
+                            />
+                        ))}
+                    </ul>
+                )}
             </div>
         </div>
     )
