@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CondeHdz/static/css/main.baf48223.css",
+    "main.css": "/CondeHdz/static/css/main.4833659d.css",
     "main.js": "/CondeHdz/static/js/main.ff2bc375.js",
     "static/js/787.7bb606d9.chunk.js": "/CondeHdz/static/js/787.7bb606d9.chunk.js",
     "service-worker.js": "/CondeHdz/service-worker.js",
@@ -13,12 +13,12 @@
     "static/media/typescript.svg": "/CondeHdz/static/media/typescript.3c40f173dd61399e0820c6eb28c31691.svg",
     "static/media/Mountains.svg": "/CondeHdz/static/media/Mountains.36d3140e23263d0530ea.svg",
     "static/media/icon_github.svg": "/CondeHdz/static/media/icon_github.f5b75fc6466fc9556d11.svg",
-    "main.baf48223.css.map": "/CondeHdz/static/css/main.baf48223.css.map",
+    "main.4833659d.css.map": "/CondeHdz/static/css/main.4833659d.css.map",
     "main.ff2bc375.js.map": "/CondeHdz/static/js/main.ff2bc375.js.map",
     "787.7bb606d9.chunk.js.map": "/CondeHdz/static/js/787.7bb606d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.baf48223.css",
+    "static/css/main.4833659d.css",
     "static/js/main.ff2bc375.js"
   ]
 }
