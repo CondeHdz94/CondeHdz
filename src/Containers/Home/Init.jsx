@@ -21,6 +21,10 @@ function Init() {
                     database management, digital art, vectorization, video
                     production and design.
                 </p>
+                <p className="color--secondary-gray bg-none">
+                    "The best way to face challenges is with an open mind and an
+                    insatiable curiosity."
+                </p>
                 <div className="container__button bg-none">
                     <Link
                         to={'Contact'}
