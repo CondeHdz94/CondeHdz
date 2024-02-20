@@ -47,7 +47,7 @@ function Qualification() {
                 <span className="material-icons-outlined color--black icon__qualification bg-none">
                     work_outline
                 </span>
-                <h3 className="color--black bg-none">Work</h3>
+                <h3 className="color--black bg-none">Experience</h3>
                 <ul className="bg-none">
                     {qualificationWork.map((item, index) => (
                         <GlassQualificationWork

@@ -10,10 +10,12 @@ import Discount from '../Containers/Home/Discount'
 import ContactMe from '../Containers/Home/ContactMe'
 import Social from '../Containers/Home/Social'
 import RightReserved from '../Containers/Home/RightReserved'
+// import SmoothBlob from '../Components/SmoothBlob'
 
 function Home() {
     return (
         <>
+            {/* <SmoothBlob /> */}
             <BackgroundShapes />
             <Init />
             <About />

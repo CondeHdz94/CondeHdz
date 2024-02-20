@@ -3,7 +3,7 @@
         h1,
         h3,
         p,
-        .container__button {
+        .container__links {
             opacity: 0;
             animation: move-down 1.2s cubic-bezier(0.5, 0, 0.5, 1) forwards;
         }
@@ -16,7 +16,7 @@
         p {
             animation-delay: 2.5s;
         }
-        .container__button {
+        .container__links {
             animation-delay: 3s;
         }
     }
@@ -88,8 +88,38 @@
     }
 }
 
-.container__button {
+.container__links {
     text-align-last: right;
+    margin-top: 1.5rem;
+    height: 100%;
+
+    .container__principal__links {
+        display: flex;
+
+        .icon__att {
+            height: 32px;
+            width: 32px;
+            background-color: var(--black);
+        }
+
+        .icon_github {
+            -webkit-mask: url(../../../../Img/Home/icon_github.svg) no-repeat;
+            mask: url(../../../../Img/Home/icon_github.svg) no-repeat;
+            mask-size: 32px;
+        }
+
+        .icon_linkedin {
+            -webkit-mask: url(../../../../Img/Home/icon_linkedin.svg) no-repeat;
+            mask: url(../../../../Img/Home/icon_linkedin.svg) no-repeat;
+            mask-size: 32px;
+        }
+
+        .icon_instagram {
+            -webkit-mask: url(../../../../Img/Home/icon_instagram.svg) no-repeat;
+            mask: url(../../../../Img/Home/icon_instagram.svg) no-repeat;
+            mask-size: 32px;
+        }
+    }
 }
 
 @media (min-width: 1024px) {

@@ -106,6 +106,7 @@ export default function ContactMe() {
                             icon={item.icon}
                             title={item.title}
                             text={item.text}
+                            link={item?.link}
                         />
                     ))}
                 </ul>

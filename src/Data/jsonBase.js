@@ -2,7 +2,7 @@ import javascriptIcon from '../Components/SVG/Icons/javascript.svg'
 import typescriptIcon from '../Components/SVG/Icons/typescript.svg'
 
 export const dataInfo = [
-    { old: '04+', info: 'Years', desc: 'experience' },
+    { old: '05+', info: 'Years', desc: 'experience' },
     { old: '20+', info: 'Completed', desc: 'projects' },
     { old: '03+', info: 'Companies', desc: 'worked' },
 ]
@@ -399,27 +399,38 @@ export const contactMe = [
         title: 'Email',
         text: 'condeher94@gmail.com',
     },
+    {
+        icon: 'insert_drive_file',
+        title: 'Curriculum Vitae',
+        text: 'Download CV PDF',
+        link: 'https://drive.google.com/file/d/1kSmkL5aamk7YxhwDRes3exMLsOoCUw8L/view?usp=drive_link',
+    },
 ]
 
 export const social = [
     {
         icon: 'github',
         page: 'https://github.com/CondeHdz94',
+        principal: true,
     },
     {
         icon: 'behance',
         page: 'https://www.behance.net/camiloconde',
+        principal: false,
     },
     {
         icon: 'linkedin',
         page: 'https://www.linkedin.com/in/camilo-conde-652204220/',
+        principal: true,
     },
     {
         icon: 'instagram',
         page: 'https://www.google.com/',
+        principal: false,
     },
     {
         icon: 'twitter',
         page: 'https://twitter.com/cndhdz',
+        principal: false,
     },
 ]

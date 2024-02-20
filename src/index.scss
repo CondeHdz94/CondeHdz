@@ -270,7 +270,8 @@ button {
     margin: 8px 0px;
 }
 
-button {
+button,
+.button__type {
     font-weight: 600;
     font-size: 0.875rem;
     padding: 1rem;
