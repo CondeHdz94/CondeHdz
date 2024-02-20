@@ -9,7 +9,6 @@ export default function ContactMeInfoCard({ icon, title, text, link }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="color--secondary-dark-gray bg-none"
-                    onClick={() => console.log('click')}
                 >
                     <span className="material-icons-outlined bg-none color--black">
                         {icon}
